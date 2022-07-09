@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Apple {
+            constructor (weight) {
+                this.weight = weight;
+            }
+
+            decreaseApple() {
+                return this.weight = this.weight - 1;
+            }
+
+            isEmpty() {
+                return this.weight == 0;
+            }
+
+            getWeight() {
+                return this.weight;
+            }
+        }
+
+        let apple = new Apple(10);
+
+        class Human {
+            constructor (name, gender, weight) {
+                this.name = name;
+                this.gender = gender;
+                this.weight = weight;
+            }
+
+            isMale() {
+                return this.gender == male;
+            }
+
+            setGender(sex) {
+                return this.gender = sex;
+            }
+
+            checkApple() {
+                return apple.weight;
+            }
+
+            eat() {
+                if (apple.weight > 0) {
+                    apple.decreaseApple();
+                    this.weight = this.weight + 1;
+                }
+            }
+
+            say(string) {
+                return console.log(string);
+            }
+
+            getName() {
+                return this.name;
+            }
+
+            setName(newName) {
+                return this.name = newName;
+            }
+
+            getWeight() {
+                return this.weight;
+            }
+
+            setWeight(newWeight) {
+                return this.weight = newWeight;
+            }
+        }
+
+        let human = new Human('Binh', 'male', 60);
+        human.setWeight(50);
+        human.eat();
+        human.say('Today is monday')
+        human.setName('Binh Nguyen');
+
+
+        console.log(human.getName(), '1')
+        console.log(human.getWeight())
+        console.log(apple.getWeight())
+    </script>
+</body>
+</html>
